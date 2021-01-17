@@ -1,6 +1,6 @@
 {
   "name": "debounceify",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny async debouncer",
   "main": "index.js",
   "dependencies": {},

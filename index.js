@@ -1,4 +1,4 @@
-module.exports = function nanodebounce (worker, context = null) {
+module.exports = function debounce (worker, context = null) {
   let running = null
 
   return async function debounced () {

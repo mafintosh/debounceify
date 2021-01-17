@@ -1,5 +1,5 @@
 {
-  "name": "nanodebounce",
+  "name": "debounceify",
   "version": "0.0.0",
   "description": "WIP - nothing to see here",
   "main": "index.js",
@@ -7,12 +7,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/nanodebounce.git"
+    "url": "https://github.com/mafintosh/debounceify.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mafintosh/nanodebounce/issues"
+    "url": "https://github.com/mafintosh/debounceify/issues"
   },
-  "homepage": "https://github.com/mafintosh/nanodebounce"
+  "homepage": "https://github.com/mafintosh/debounceify"
 }

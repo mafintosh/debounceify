@@ -1,24 +1,25 @@
 module.exports = function debounce (worker, context = null) {
-  let running = null
+  debounced.running = null
+  return debounced
 
-  return async function debounced () {
-    if (running !== null) {
+  async function debounced () {
+    if (debounced.running !== null) {
       try {
-        await running
+        await debounced.running
       } catch (_) {
         // ignore - do not fail on old errors
       }
     }
 
     // another "thread" beat us to it, just piggy pack on that one
-    if (running !== null) return running
+    if (debounced.running !== null) return debounced.running
 
-    running = worker.call(context)
+    debounced.running = worker.call(context)
 
     try {
-      return await running
+      return await debounced.running
     } finally {
-      running = null
+      debounced.running = null
     }
   }
 }

@@ -38,6 +38,10 @@ Debounces the `asyncFunction` so that
 2. Debounces the stack, so if 10 calls happen while `asyncFunction` is running only one more will be triggered when it finishes.
 3. Forwards errors and return values.
 
+#### `debounceify.running`
+
+The active running job, `null` if none.
+
 ## License
 
 MIT
